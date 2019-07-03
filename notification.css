@@ -1,0 +1,80 @@
+.notification
+{
+	z-index: 5;
+	position: fixed;
+	bottom: 5px;
+	right: 5px;
+	width: 300px;
+}
+
+.notificationBlock
+{
+	margin-top: 4px;
+}
+
+.notificationBlock:first-child
+{
+	margin-top: 0;
+}
+
+.notificationTitle
+{
+	border-radius: 5px 5px 0 0;
+	text-align: center;
+	padding: 3px;
+	font-weight: bold;
+}
+
+.notificationBody
+{
+	border-radius: 0 0 5px 5px;
+	padding: 3px;
+}
+
+.notificationTitle.error
+{
+	background: #FF5050;
+}
+
+.notificationBody.error
+{
+	background: #FF8888;
+}
+
+.notificationTitle.good
+{
+	background: #30BF30;
+}
+
+.notificationBody.good
+{
+	background: #73FF73;
+}
+
+.notificationClose
+{
+	position: absolute;
+	right: 5px;
+	width: 20px;
+	height: 20px;
+}
+
+.notificationClose:before, .notificationClose:after
+{
+	top: 2px;
+	position: absolute;
+	content: ' ';
+	width: 2px;
+	height: 15px;
+	background-color: #333;
+}
+
+.notificationClose:before
+{
+	transform: rotate(45deg);
+}
+
+.notificationClose:after
+{
+	transform: rotate(-45deg);
+}
